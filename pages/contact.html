@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Muhammad S.A. Iqbal</title>
+    <meta
+      name="description"
+      content="Contact information for Muhammad S.A. Iqbal - Web Developer, Designer, Content Creator & Photographer"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../public/images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body class="dark-mode">
+    <!-- Background Animation -->
+    <div class="background-animation">
+      <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="logo">
+          <a href="../index.html" aria-label="Home" title="Home"
+            ><img
+              src="../public/images/white-logo.svg"
+              alt="Muhammad S.A. Iqbal"
+              width="90"
+              height="auto"
+              id="themeLogo"
+          /></a>
+        </div>
+
+        <nav class="main-nav">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="./about.html" class="nav-link">About</a>
+          <a href="./projects.html" class="nav-link">Projects</a>
+          <a href="./resume.html" class="nav-link">Resume</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            id="themeToggle"
+            class="action-icon"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+            <span class="tooltip">Toggle Theme</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <div class="contact-container">
+          <div class="contact-header">
+            <h1 class="contact-title">Contact Me</h1>
+            <p class="contact-subtitle">
+              Feel free to reach out through any of the following channels.
+            </p>
+          </div>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text txt-color">
+                <h3>Phone</h3>
+                <p>+88 01762 797120</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text txt-color">
+                <h3>Email</h3>
+                <a href="mailto:hello@example.com">sayhi.iqbal@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="contact-text txt-color">
+                <h3>Dev Platform</h3>
+                <a href="https://www.msaiqbal.com" target="_blank"
+                  >github.com/msa-iqbal</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          &copy; <span id="currentYear"></span> Muhammad S.A. Iqbal. All rights
+          reserved.
+        </p>
+        <p class="footer-note">
+          Made with <i class="fas fa-heart"></i> and hosted on
+          <i class="fab fa-github"></i> Pages
+        </p>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Muhammad S.A. Iqbal</title>
+    <meta
+      name="description"
+      content="Professional resume of Muhammad S.A. Iqbal - Web Developer, Designer, Content Creator & Photographer"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../public/images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/about.css" />
+  </head>
+  <body class="dark-mode">
+    <!-- Background Animation -->
+    <div class="background-animation">
+      <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="logo">
+          <a href="../index.html" aria-label="Home" title="Home"
+            ><img
+              src="../public/images/white-logo.svg"
+              alt="Muhammad S.A. Iqbal"
+              width="90"
+              height="auto"
+              id="themeLogo"
+          /></a>
+        </div>
+
+        <nav class="main-nav">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="./about.html" class="nav-link">About</a>
+          <a href="./projects.html" class="nav-link">Projects</a>
+          <a href="./resume.html" class="nav-link">Resume</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            id="themeToggle"
+            class="action-icon"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+            <span class="tooltip">Toggle Theme</span>
+          </button>
+        </div>
+        <div class="header-actions">
+          <a
+            href="https://drive.google.com/file/d/1gvaFvf4nhWI01WCAEKRdLKuIgcBI2-JT/view?usp=sharing"
+            class="download-resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fas fa-download"></i> Get Resume
+          </a>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <div class="resume-header">
+          <h1 class="resume-title">My Resume</h1>
+          <p class="resume-subtitle">
+            Professional Experience & Qualifications
+          </p>
+        </div>
+
+        <!-- Career Objective Section -->
+        <div class="cus-margin2">
+          <div class="section-header">
+            <div class="section-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h2>Career Objective</h2>
+          </div>
+          <p>
+            Aspiring Web Developer with a solid foundation in IT technical
+            support and digital marketing. Eager to apply my technical
+            expertise, problem-solving skills, and passion for coding to
+            contribute to a forward-thinking organization. Open to both remote
+            and on-site opportunities that promote growth, innovation, and
+            meaningful impact.
+          </p>
+        </div>
+
+        <!-- Career Summary Section -->
+        <div class="resume-section">
+          <div class="section-header">
+            <div class="section-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h2>Career Summary</h2>
+          </div>
+          <p>
+            Highly motivated and detail-oriented professional with over 7 years
+            of experience in IT support and SEO/digital marketing. Recently
+            transitioned into web development with hands-on skills in HTML, CSS,
+            JavaScript, TypeScript, Tailwind CSS, React.js, Express.js, Next.js,
+            and MongoDB. A strong team player, quick learner, and committed to
+            continuous professional growth.
+          </p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="resume-section">
+          <div class="section-header">
+            <div class="section-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h2>Technical Skills</h2>
+          </div>
+
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3>Web Development</h3>
+              <div class="skill-bars">
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>HTML/CSS</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>JavaScript</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>TypeScript</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>Tailwind CSS</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>React.js</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>Next.js</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>Express.js</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>MongoDB</span>
+                    <span>88%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Other Activities</h3>
+              <div class="skill-bars">
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>Search Engine Optimization</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>Digital Marketing</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>Graphic Design & Video Editing</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>Customer Support and Collaboration Skills</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>Leadership Skills</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>IT Technical Expertise</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Section -->
+        <div class="resume-section">
+          <div class="section-header">
+            <div class="section-icon">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <h2>Projects</h2>
+          </div>
+
+          <p class="para-text">
+            If you want to see more projects,
+            <a
+              href="../pages/projects.html"
+              target="_blank"
+              aria-label="internal link to portfolio"
+              class="click-here"
+              >click here</a
+            >
+          </p>
+          <div class="certificates-grid">
+            <div class="certificate-card">
+              <div class="certificate-image">
+                <img
+                  src="../public/proj-img/indoor-plant.png?height=180&width=320"
+                  alt="Indoor Tree Plant"
+                />
+              </div>
+              <div class="certificate-info">
+                <h3>Indoor Tree Plant</h3>
+                <div class="issuer">
+                  <h4>Landing Page (Design)</h4>
+                </div>
+                <div class="date">
+                  Featuring Tailwind CSS, SwiperJS, ScrollRevealJS, interactive
+                  navigation, and responsive design for a modern user
+                  experience.
+                </div>
+                <a
+                  href="https://temp-plant-web.netlify.app"
+                  class="certificate-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Landing Page (Design)"
+                >
+                  <i class="fas fa-external-link-alt"></i> View on Web
+                </a>
+              </div>
+            </div>
+            <div class="certificate-card">
+              <div class="certificate-image">
+                <img
+                  src="../public/proj-img/rest.jpg?height=180&width=320"
+                  alt="RESTful API with Authentication"
+                />
+              </div>
+              <div class="certificate-info">
+                <h3>RESTful API with Authentication</h3>
+                <div class="issuer">
+                  <h4>REST API</h4>
+                </div>
+                <div class="date">
+                  A robust RESTful API using Express.js and MongoDB, featuring
+                  JWT-based authentication, bcrypt password hashing, CRUD
+                  operations.
+                </div>
+                <a
+                  href="https://github.com/msa-iqbal/restful-api-with-auth-and-data"
+                  class="certificate-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="RESTful API with Authentication"
+                >
+                  <i class="fas fa-external-link-alt"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+            <div class="certificate-card">
+              <div class="certificate-image">
+                <img
+                  src="../public/proj-img/blog-app.png?height=180&width=320"
+                  alt="Blog App"
+                />
+              </div>
+              <div class="certificate-info">
+                <h3>Blog App</h3>
+                <div class="issuer">
+                  <h4>Complete Web Application</h4>
+                </div>
+                <div class="date">
+                  This is a Next.js project integrated with Sanity CMS for
+                  managing content and Auth.js for authentication.
+                </div>
+                <a
+                  href="https://blog-app-taupe-gamma-83.vercel.app/"
+                  class="certificate-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Blog App"
+                >
+                  <i class="fas fa-external-link-alt"></i> View on Web
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div class="cus-margin">
+          <div class="section-header">
+            <div class="section-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h2 class="work-title">Work Experience</h2>
+          </div>
+
+          <div class="work-experience">
+            <h3>IT Support Officer</h3>
+            <a
+              href="https://waltondigitech.com/"
+              target="_blank"
+              aria-label="Walton Digi-Tech Industries Ltd."
+              title="Walton Digi-Tech Industries Ltd."
+              ><h4>Walton Digi-Tech Industries Ltd.</h4></a
+            >
+            <div class="timeline-date">Nov 2020 - Present</div>
+            <p>
+              Provide technical support and troubleshooting for IT
+              infrastructure. Collaborate with cross-functional teams to ensure
+              smooth operations and resolve issues efficiently.
+            </p>
+            <div class="work-details">
+              <h4>Key Responsibilities</h4>
+              <ul>
+                <li>
+                  Supported 1700+ users with hardware/software troubleshooting.
+                </li>
+                <li>
+                  Resolved issues via remote tools and maintained detailed logs.
+                </li>
+                <li>
+                  Assisted in IT infrastructure upgrades and strategy
+                  improvements.
+                </li>
+                <li>Conducted audits, updates, and user training sessions.</li>
+              </ul>
+
+              <h4>Key Achievements</h4>
+              <ul>
+                <li>Recognized for outstanding customer service.</li>
+                <li>Nominated for performance awards (Feb & Mar 2022).</li>
+              </ul>
+
+              <h4>Technical Skills</h4>
+              <ul>
+                <li>Operating Systems: Windows, macOS, Linux.</li>
+                <li>Networking: TCP/IP, DNS, DHCP, PPPoE, VPN, LAN/WAN.</li>
+                <li>
+                  Software: VMware, Hyper-V, TightVNC, Cinebench, LoadTracer,
+                  Microsoft Office Suite, Antivirus Software, etc.
+                </li>
+                <li>
+                  Hardware: PCs, Laptops, Tablets, Printers, Routers, Switches,
+                  Access Control, CCTV, etc.
+                </li>
+              </ul>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jun 2022 - Present</div>
+                <div class="timeline-content">
+                  <h4>Senior IT Support Officer</h4>
+                  <p>
+                    As a Senior IT Support Officer, I was responsible for
+                    ensuring seamless IT operations across the organization by
+                    providing expert technical support, managing infrastructure,
+                    and leading a support team.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Dec 2021 - May 2023</div>
+                <div class="timeline-content">
+                  <h4>Assistant IT Support Officer</h4>
+                  <p>
+                    Assisted senior engineers in managing IT systems, handling
+                    technical support requests, and documenting IT processes
+                    while gaining hands-on experience in large-scale
+                    infrastructure management.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Nov 2020 - Nov 2021</div>
+                <div class="timeline-content">
+                  <h4>Junior IT Support Officer</h4>
+                  <p>
+                    Handled basic technical issues, supported users with
+                    hardware/software troubleshooting, and ensured smooth daily
+                    IT operations under senior guidance.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-tags">
+              <span>Hyper-V</span>
+              <span>TightVNC</span>
+              <span>Cinebench</span>
+              <span>LoadTracer</span>
+              <span>Office Application</span>
+              <span>PowerToys</span>
+              <span>Wise Uninstaller</span>
+              <span>Cloudflare WARP</span>
+              <span>MemReduct</span>
+              <span>Bitdefender</span>
+              <span>Snappy Driver</span>
+              <span>NCH Debut</span>
+              <span>Unlocker</span>
+              <span>Explorer X</span>
+              <span>Search Everything</span>
+              <span>DupFinder</span>
+              <span>SmadAV</span>
+            </div>
+          </div>
+
+          <div class="work-experience">
+            <h3>Instructor of SEO & Digital Marketing (4.2 yrs)</h3>
+            <a
+              href="https://www.creativeitinstitute.com/"
+              target="_blank"
+              aria-label="Creative IT Institute Ltd."
+              title="Creative IT Institute Ltd."
+              ><h4>Creative IT Institute Ltd.</h4></a
+            >
+            <div class="timeline-date">April 2016 - June 2020</div>
+            <p>
+              Provided professional training in SEO and digital marketing,
+              supported learners with practical guidance, and worked with teams
+              to ensure effective and smooth training delivery.
+            </p>
+            <div class="work-details">
+              <h4>Key Responsibilities</h4>
+              <ul>
+                <li>
+                  Designed and delivered comprehensive training modules on SEO
+                  and digital marketing strategies.
+                </li>
+                <li>
+                  Led engaging workshops, webinars, and seminars for audiences
+                  ranging from beginners to advanced professionals.
+                </li>
+                <li>
+                  Trained individuals in the effective use of SEO tools,
+                  including Google Analytics, SEMrush, and Ahrefs.
+                </li>
+                <li>
+                  Taught strategies for integrating SEO with social media to
+                  enhance online visibility.
+                </li>
+                <li>
+                  Conducted assessments and provided constructive feedback to
+                  help trainees improve their skills.
+                </li>
+              </ul>
+
+              <h4>Key Achievements</h4>
+              <ul>
+                <li>
+                  Collaborated with cross-functional teams to integrate SEO
+                  training into broader digital marketing curricula, enhancing
+                  the overall learning experience.
+                </li>
+              </ul>
+
+              <h4>Technical Skills</h4>
+              <ul>
+                <li>
+                  SEO Tools: Google Analytics, Google Search Console, SEMrush,
+                  Ahrefs, Moz, Screaming Frog
+                </li>
+                <li>CMS: WordPress</li>
+                <li>Web Technologies: HTML, CSS, JavaScript</li>
+                <li>Marketing Platforms: HubSpot, Mailchimp</li>
+                <li>Social Media Tools: Hootsuite, Buffer, Sprout Social</li>
+              </ul>
+
+              <div class="portfolio-tags">
+                <span>Google Analytics</span>
+                <span>Google Search Console</span>
+                <span>Google Adwords</span>
+                <span>Google Trends</span>
+                <span>Rank Tracker</span>
+                <span>Screaming Frog</span>
+                <span>Google Tag Manager</span>
+                <span>Hootsuite</span>
+                <span>SEMrush</span>
+                <span>Buffer</span>
+                <span>Mailchimp</span>
+                <span>SEO Quake</span>
+                <span>Yoast SEO</span>
+                <span>MOZ</span>
+                <span>AnswerThePublic</span>
+                <span>Can I Rank</span>
+                <span>Woorank</span>
+                <span>GTmatrix</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="resume-section">
+          <div class="section-header">
+            <div class="section-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h2>Education</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2017 - 2022</div>
+              <div class="timeline-content">
+                <h3>Bachelor's in Computer Science</h3>
+                <a
+                  href="https://bubt.edu.bd/"
+                  target="_blank"
+                  aria-label="Walton Digi-Tech Industries Ltd."
+                  title="Walton Digi-Tech Industries Ltd."
+                  class="edu-link"
+                  ><h4>Bangladesh University of Business and Technology</h4></a
+                >
+                <p>
+                  A Bachelor’s in Computer Science equips graduates with
+                  essential skills in programming, problem-solving, and software
+                  development for building real-world applications.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2011 - 2016</div>
+              <div class="timeline-content">
+                <h3>Diploma in Computer Technology</h3>
+                <a
+                  href="https://rangpur.polytech.gov.bd/"
+                  target="_blank"
+                  aria-label="Rangpur Polytechnic Institute"
+                  title="Rangpur Polytechnic Institute"
+                  class="edu-link"
+                  ><h4>Rangpur Polytechnic Institute</h4></a
+                >
+                <p>
+                  Diploma in Computer Technology from Rangpur Polytechnic
+                  Institute, focused on foundational computer engineering,
+                  software, and hardware skills.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2010 - 2011</div>
+              <div class="timeline-content">
+                <h3>Secondary School Certificate</h3>
+                <a
+                  href="https://ggbhs.edu.bd/"
+                  target="_blank"
+                  aria-label="Gaibandha Govt boys' High School"
+                  title="Gaibandha Govt boys' High School"
+                  class="edu-link"
+                  ><h4>Gaibandha Govt boys' High School</h4></a
+                >
+                <p>
+                  Secondary School Certificate (Science) from Gaibandha Govt.
+                  Boys' High School, with a strong foundation in mathematics,
+                  physics, and general science.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificates Section -->
+        <div class="certificates-section">
+          <div class="section-header">
+            <div class="section-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h2>Certificates</h2>
+          </div>
+
+          <div class="certificates-grid">
+            <div class="certificate-card">
+              <div class="certificate-image">
+                <img
+                  src="../public/document-img/seo.png?height=180&width=320"
+                  alt="Search Engine Optimization"
+                />
+              </div>
+              <div class="certificate-info">
+                <h3>Search Engine Optimization</h3>
+                <div class="issuer">
+                  <a
+                    href="https://www.creativeitinstitute.com/"
+                    target="_blank"
+                    aria-label="Creative IT Institute Ltd."
+                    title="Creative IT Institute Ltd."
+                    class="edu-link"
+                    ><h4>Creative IT Institute Ltd.</h4></a
+                  >
+                </div>
+                <div class="date">Completed in 2016 (3-month duration)</div>
+                <a
+                  href="https://drive.google.com/file/d/1Iesd_BG18xsbCCcZEPReMshKgbiTLBXm/view?usp=sharing"
+                  class="certificate-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Search Engine Optimization"
+                >
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </a>
+              </div>
+            </div>
+
+            <div class="certificate-card">
+              <div class="certificate-image">
+                <img
+                  src="../public/document-img/office.png?height=180&width=320"
+                  alt="Computer Office Application"
+                />
+              </div>
+              <div class="certificate-info">
+                <h3>Computer Office Application</h3>
+                <div class="issuer">
+                  <a
+                    href="../pages/404.html"
+                    target="_blank"
+                    aria-label="Jyoti-Prova Computer Training Institute"
+                    title="Jyoti-Prova Computer Training Institute"
+                    class="edu-link"
+                    ><h4>Jyoti-Prova Computer Training Institute</h4></a
+                  >
+                </div>
+                <div class="date">Completed in 2011 (3-month duration)</div>
+                <a
+                  href="https://drive.google.com/file/d/1kgUT6dMULm-9wnickD6HxuyGpIFS7LOA/view?usp=sharing"
+                  class="certificate-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Computer Office Application"
+                >
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Language Proficiency Section -->
+        <div class="resume-section">
+          <div class="section-header">
+            <div class="section-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h2>Language Proficiency</h2>
+          </div>
+
+          <div class="skills-container">
+            <div class="skill-category">
+              <div class="skill-bars">
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>Bangla</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <span>English</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 0%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extra Activities Section -->
+        <div>
+          <div class="section-header">
+            <div class="section-icon">
+              <i class="fas fa-person-biking"></i>
+            </div>
+            <h2>Extra Activities</h2>
+          </div>
+          <p>
+            Outside of coding, I enjoy immersing myself in mobile and computer
+            games — a hobby that sharpens my strategic thinking and enhances my
+            problem-solving abilities. I also find inspiration through music,
+            books, and travel, all of which keep me refreshed, motivated, and
+            creatively fueled in both my personal and professional life.
+          </p>
+
+          <div class="about-section about-cards-section inner-padding">
+            <div class="about-cards">
+              <div class="about-card" data-aos="zoom-in">
+                <div class="card-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="card-content">
+                  <p>I love programming and enjoy sharing what I learn.</p>
+                </div>
+              </div>
+
+              <div class="about-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="card-icon">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <div class="card-content">
+                  <p>
+                    I mostly play "PUBG" and "Clash of Clans" in my free time. I
+                    also enjoy puzzle and racing games.
+                  </p>
+                </div>
+              </div>
+              <div class="about-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="card-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="card-content">
+                  <p>
+                    I’m exploring video creation and will share some soon. Feel
+                    free to visit
+                    <a
+                      href="https://www.youtube.com/@msa-iqbal"
+                      target="_blank"
+                      aria-label="Daily.Dev"
+                      >my channel</a
+                    >
+                    if you like.
+                  </p>
+                </div>
+              </div>
+              <div class="about-card" data-aos="zoom-in" data-aos-delay="500">
+                <div class="card-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Currently diving into new technologies — I believe every day
+                    is a learning opportunity.
+                  </p>
+                </div>
+              </div>
+              <div class="about-card" data-aos="zoom-in" data-aos-delay="600">
+                <div class="card-icon">
+                  <i class="fas fa-car"></i>
+                </div>
+                <div class="card-content">
+                  <p>
+                    I enjoy adventurous travel and in my free time, exploring
+                    new places on my motorcycle.
+                  </p>
+                </div>
+              </div>
+              <div class="about-card" data-aos="zoom-in" data-aos-delay="700">
+                <div class="card-icon">
+                  <i class="fas fa-edit"></i>
+                </div>
+                <div class="card-content">
+                  <p>
+                    I write about tech trends, personal insights, and creative
+                    ideas. Take a look at
+                    <a
+                      href="https://dly.to/zKh1SqzACRO"
+                      target="_blank"
+                      aria-label="Daily.Dev"
+                      >my blogs</a
+                    >
+                    if you wish.
+                  </p>
+                </div>
+              </div>
+              <div class="about-card" data-aos="zoom-in" data-aos-delay="800">
+                <div class="card-icon">
+                  <i class="fas fa-camera"></i>
+                </div>
+                <div class="card-content">
+                  <p>
+                    I'm a big fan of candid photography and love capturing
+                    natural moments.
+                  </p>
+                </div>
+              </div>
+              <div class="about-card" data-aos="zoom-in" data-aos-delay="900">
+                <div class="card-icon">
+                  <i class="fas fa-clapperboard"></i>
+                </div>
+                <div class="card-content">
+                  <p>
+                    I like watching thriller, adventure, detective and
+                    biographical movies based on real stories.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          &copy; <span id="currentYear"></span> Muhammad S.A. Iqbal. All rights
+          reserved.
+        </p>
+        <p class="footer-note">
+          Made with <i class="fas fa-heart"></i> and hosted on
+          <i class="fab fa-github"></i> Pages
+        </p>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/about.js"></script>
+  </body>
+</html>

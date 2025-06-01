@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Muhammad S.A. Iqbal</title>
+    <meta
+      name="description"
+      content="Portfolio of Muhammad S.A. Iqbal - Web Developer, Designer, Content Creator & Photographer"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../public/images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body class="dark-mode">
+    <!-- Background Animation -->
+    <div class="background-animation">
+      <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="logo">
+          <a href="../index.html" aria-label="Home" title="Home"
+            ><img
+              src="../public/images/white-logo.svg"
+              alt="Muhammad S.A. Iqbal"
+              width="90"
+              height="auto"
+              id="themeLogo"
+          /></a>
+        </div>
+
+        <nav class="main-nav">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="./about.html" class="nav-link">About</a>
+          <a href="./projects.html" class="nav-link">Projects</a>
+          <a href="./resume.html" class="nav-link">Resume</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            id="themeToggle"
+            class="action-icon"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+            <span class="tooltip">Toggle Theme</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <div class="portfolio-header">
+          <h1 class="portfolio-title">My Projects</h1>
+          <p class="portfolio-subtitle">
+            A collection of my best work and projects across web development,
+            design, and creative fields.
+          </p>
+        </div>
+
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="design">UI/UX Design</button>
+          <button class="filter-btn" data-filter="app">
+            API-Driven Projects
+          </button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- =============== Portfolio 1 =============== -->
+          <div class="portfolio-item" data-category="design">
+            <div class="portfolio-image">
+              <img
+                src="../public/proj-img/indoor-plant.png?height=180&width=320"
+                alt="E-commerce Website"
+              />
+              <div class="portfolio-overlay">
+                <div class="portfolio-links">
+                  <a
+                    href="https://temp-plant-web.netlify.app"
+                    class="portfolio-link"
+                    aria-label="View Project"
+                    target="_blank"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                  <a
+                    href="https://github.com/msa-iqbal/design-la-indoor-tree-plant"
+                    class="portfolio-link"
+                    aria-label="View Code"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Indoor Tree Plant</h3>
+              <p>
+                Featuring Tailwind CSS, SwiperJS, ScrollRevealJS, interactive
+                navigation, and responsive design for a modern user experience.
+              </p>
+              <div class="portfolio-tags">
+                <span>Tailwind CSS</span>
+                <span>SwiperJS</span>
+                <span>ScrollRevealJS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- =============== Portfolio 2 =============== -->
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img
+                src="../public/proj-img/blog-app.png?height=180&width=320"
+                alt="E-commerce Website"
+              />
+              <div class="portfolio-overlay">
+                <div class="portfolio-links">
+                  <a
+                    href="https://blog-app-taupe-gamma-83.vercel.app/"
+                    class="portfolio-link"
+                    aria-label="View Project"
+                    target="_blank"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                  <a
+                    href="https://github.com/msa-iqbal/blog-app"
+                    class="portfolio-link"
+                    aria-label="View Code"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Blog App</h3>
+              <p>
+                This is a Next.js project integrated with Sanity CMS for
+                managing content and Auth.js for authentication.
+              </p>
+              <div class="portfolio-tags">
+                <span>Tailwind CSS</span>
+                <span>Next.js</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- =============== Portfolio 3 =============== -->
+          <div class="portfolio-item" data-category="app">
+            <div class="portfolio-image">
+              <img
+                src="../public/proj-img/rest.jpg?height=180&width=320"
+                alt="E-commerce Website"
+              />
+              <div class="portfolio-overlay">
+                <div class="portfolio-links">
+                  <a
+                    href="https://github.com/msa-iqbal/restful-api-with-auth-and-data"
+                    class="portfolio-link"
+                    aria-label="View Code"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>RESTful API with Authentication</h3>
+              <p>
+                A robust RESTful API using Express.js and MongoDB, featuring
+                JWT-based authentication, bcrypt password hashing, CRUD
+                operations.
+              </p>
+              <div class="portfolio-tags">
+                <span>User Authentication</span>
+                <span>CRUD Operations</span>
+                <span>JWT Authentication</span>
+                <span>Validation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- =============== Portfolio End =============== -->
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          &copy; <span id="currentYear"></span> Muhammad S.A. Iqbal. All rights
+          reserved.
+        </p>
+        <p class="footer-note">
+          Made with <i class="fas fa-heart"></i> and hosted on
+          <i class="fab fa-github"></i> Pages
+        </p>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

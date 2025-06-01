@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found - Muhammad S.A. Iqbal</title>
+    <meta
+      name="description"
+      content="The page you are looking for could not be found."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../public/images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/404.css" />
+  </head>
+
+  <body class="dark-mode">
+    <!-- Background Animation -->
+    <div class="background-animation">
+      <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="logo">
+          <a href="../index.html" aria-label="Home" title="Home"
+            ><img
+              src="../public/images/white-logo.svg"
+              alt="Muhammad S.A. Iqbal"
+              width="90"
+              height="auto"
+              id="themeLogo"
+          /></a>
+        </div>
+
+        <nav class="main-nav">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="./about.html" class="nav-link">About</a>
+          <a href="./projects.html" class="nav-link">Projects</a>
+          <a href="./resume.html" class="nav-link">Resume</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            id="themeToggle"
+            class="action-icon"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+            <span class="tooltip">Toggle Theme</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <div class="error-container">
+          <div class="particles" id="particles"></div>
+          <div class="error-code">404</div>
+          <h1 class="error-title">Page Not Found</h1>
+          <p class="error-message">
+            Oops! The page you are looking for might have been removed, had its
+            name changed, or is temporarily unavailable.
+          </p>
+          <div class="error-illustration">
+            <i class="fas fa-ghost"></i>
+          </div>
+          <a href="../index.html" class="error-btn">
+            <i class="fas fa-home"></i> Back to Home
+          </a>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          &copy; <span id="currentYear"></span> Muhammad S.A. Iqbal. All rights
+          reserved.
+        </p>
+        <p class="footer-note">
+          Made with <i class="fas fa-heart"></i> and hosted on
+          <i class="fab fa-github"></i> Pages
+        </p>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad S.A. Iqbal | Digital Creator</title>
+    <meta
+      name="description"
+      content="Portfolio of Muhammad S.A. Iqbal - Web Developer, Designer, Content Creator & Photographer"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./public/images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/social.css" />
+  </head>
+  <body class="dark-mode">
+    <!-- Background Animation -->
+    <div class="background-animation">
+      <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="logo">
+          <a href="index.html" aria-label="Home" title="Home"
+            ><img
+              src="./public/images/white-logo.svg"
+              alt="Muhammad S.A. Iqbal"
+              width="90"
+              height="auto"
+              id="themeLogo"
+          /></a>
+        </div>
+
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="./pages/about.html" class="nav-link">About</a>
+          <a href="./pages/projects.html" class="nav-link">Projects</a>
+          <a href="./pages/resume.html" class="nav-link">Resume</a>
+          <a href="./pages/contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button id="shareBtn" class="action-icon" aria-label="Share">
+            <i class="fas fa-share-nodes"></i>
+            <span class="tooltip">Share</span>
+          </button>
+          <button
+            id="themeToggle"
+            class="action-icon"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+            <span class="tooltip">Toggle Theme</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <div class="profile-image-container">
+              <div class="profile-image">
+                <img
+                  src="./public/images/profile.jpg"
+                  alt="Muhammad S.A. Iqbal"
+                />
+              </div>
+            </div>
+            <div class="hero-text">
+              <h1>Muhammad S.A. Iqbal</h1>
+              <div class="title-wrapper">
+                <p class="title">Web Developer</p>
+                <p class="title">Designer</p>
+                <p class="title">Content Creator</p>
+                <p class="title">Photographer</p>
+              </div>
+              <p class="bio">
+                Passionate about creating beautiful digital experiences and
+                sharing knowledge with the world.
+              </p>
+              <a
+                href="https://www.msaiqbal.com"
+                class="website-link"
+                target="_blank"
+              >
+                <i class="fas fa-globe"></i>
+                linkedin.com/in/msa-iqbal
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!-- Quick Social Links -->
+          <div class="quick-social-links">
+            <div class="quick-social-title">
+              <span>Quick Connect</span>
+              <div class="quick-social-line"></div>
+            </div>
+            <div class="quick-social-icons">
+              <a
+                href="https://www.linkedin.com/in/msa-iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="linkedin"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://x.com/msaiqs"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/sayhi.iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/msaiqs"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.threads.com/@msaiqs"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="threads"
+              >
+                <i class="fas fa-at"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@msa-iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="youtube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                href="https://soundcloud.com/spnkhn"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="soundcloud"
+              >
+                <i class="fab fa-soundcloud"></i>
+              </a>
+              <a
+                href="https://www.flickr.com/photos/spnkhn"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="flickr"
+              >
+                <i class="fab fa-flickr"></i>
+              </a>
+              <a
+                href="https://pixabay.com/users/msa-iqbal-50233256"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="pixabay"
+              >
+                <i class="fas fa-images"></i>
+              </a>
+              <a
+                href="https://dribbble.com/msa-iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="dribbble"
+              >
+                <i class="fab fa-dribbble"></i>
+              </a>
+              <a
+                href="https://www.behance.net/msa-iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="behance"
+              >
+                <i class="fab fa-behance"></i>
+              </a>
+              <a
+                href="https://github.com/msa-iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="github"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://leetcode.com/u/msa-iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="leetcode"
+              >
+                <i class="fas fa-code"></i>
+              </a>
+              <a
+                href="https://stackoverflow.com/users/28065117/muhammad-s-a-iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="stackoverflow"
+              >
+                <i class="fab fa-stack-overflow"></i>
+              </a>
+              <a
+                href="https://dev.to/msa-iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="devto"
+              >
+                <i class="fab fa-dev"></i>
+              </a>
+              <a
+                href="https://app.daily.dev/msa_iqbal/posts"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="dailydev"
+              >
+                <i class="fas fa-newspaper"></i>
+              </a>
+              <a
+                href="https://medium.com/@msa-iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="medium"
+              >
+                <i class="fab fa-medium-m"></i>
+              </a>
+              <a
+                href="https://msa-iqbal.blogspot.com"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="blogspot"
+              >
+                <i class="fab fa-blogger-b"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          &copy; <span id="currentYear"></span> Muhammad S.A. Iqbal. All rights
+          reserved.
+        </p>
+        <p class="footer-note">
+          Made with <i class="fas fa-heart"></i> and hosted on
+          <i class="fab fa-github"></i> Pages
+        </p>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

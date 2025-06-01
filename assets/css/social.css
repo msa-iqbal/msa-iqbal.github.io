@@ -1,0 +1,195 @@
+/* Connect Page Styles */
+:root {
+  /* Social Media Colors */
+  --github-color: #333333;
+  --twitter-color: #1da1f2;
+  --discord-color: #7289da;
+  --linkedin-color: #0a66c2;
+  --youtube-color: #ff0000;
+  --facebook-color: #1877f2;
+  --instagram-color: #e1306c;
+  --medium-color: #00ab6c;
+  --reddit-color: #ff4500;
+  --telegram-color: #0088cc;
+  --whatsapp-color: #25d366;
+  --soundcloud: #ff7700;
+  --flickr: #ff0084;
+  --pixabay: #2ec66d;
+  --dribbble: #ea4c89;
+  --behance: #1769ff;
+  --leetcode: #f89f1b;
+  --stackoverflow: #f48024;
+  --dailydev: #0d1117;
+  --devto: #0a0a0a;
+  --blogspot: #fc4f08;
+  --threads: #000000;
+  --primary: #8a5cf6;
+}
+
+/* Quick Social Links */
+.quick-social-links {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.quick-social-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.quick-social-title span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.quick-social-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--primary), transparent);
+}
+
+.quick-social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.quick-social-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.quick-social-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.quick-social-icon:hover::before {
+  transform: translateY(0);
+}
+
+.quick-social-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.quick-social-icon[data-platform="github"] {
+  background-color: var(--github-color);
+  box-shadow: 0 5px 15px rgba(51, 51, 51, 0.3);
+}
+
+.quick-social-icon[data-platform="twitter"] {
+  background-color: var(--twitter-color);
+  box-shadow: 0 5px 15px rgba(29, 161, 242, 0.3);
+}
+
+.quick-social-icon[data-platform="discord"] {
+  background-color: var(--discord-color);
+  box-shadow: 0 5px 15px rgba(114, 137, 218, 0.3);
+}
+
+.quick-social-icon[data-platform="linkedin"] {
+  background-color: var(--linkedin-color);
+  box-shadow: 0 5px 15px rgba(10, 102, 194, 0.3);
+}
+
+.quick-social-icon[data-platform="youtube"] {
+  background-color: var(--youtube-color);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+.quick-social-icon[data-platform="facebook"] {
+  background-color: var(--facebook-color);
+  box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3);
+}
+
+.quick-social-icon[data-platform="soundcloud"] {
+  background-color: var(--soundcloud);
+  box-shadow: 0 5px 15px rgba(255, 119, 0, 0.3);
+}
+
+.quick-social-icon[data-platform="flickr"] {
+  background-color: var(--flickr);
+  box-shadow: 0 5px 15px rgba(255, 0, 132, 0.3);
+}
+
+.quick-social-icon[data-platform="pixabay"] {
+  background-color: var(--pixabay);
+  box-shadow: 0 5px 15px rgba(46, 198, 109, 0.3);
+}
+
+.quick-social-icon[data-platform="dribbble"] {
+  background-color: var(--dribbble);
+  box-shadow: 0 5px 15px rgba(234, 76, 137, 0.3);
+}
+
+.quick-social-icon[data-platform="behance"] {
+  background-color: var(--behance);
+  box-shadow: 0 5px 15px rgba(23, 105, 255, 0.3);
+}
+
+.quick-social-icon[data-platform="leetcode"] {
+  background-color: var(--leetcode);
+  box-shadow: 0 5px 15px rgba(248, 159, 27, 0.3);
+}
+
+.quick-social-icon[data-platform="stackoverflow"] {
+  background-color: var(--stackoverflow);
+  box-shadow: 0 5px 15px rgba(244, 128, 36, 0.3);
+}
+
+.quick-social-icon[data-platform="instagram"] {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);
+}
+
+.quick-social-icon[data-platform="medium"] {
+  background-color: var(--medium-color);
+  box-shadow: 0 5px 15px rgba(0, 171, 108, 0.3);
+}
+
+.quick-social-icon[data-platform="devto"] {
+  background-color: var(--github-color);
+  box-shadow: 0 5px 15px rgba(10, 10, 10, 0.3);
+}
+
+.quick-social-icon[data-platform="dailydev"] {
+  background-color: var(--github-color);
+  box-shadow: 0 5px 15px rgba(13, 17, 23, 0.3);
+}
+
+.quick-social-icon[data-platform="blogspot"] {
+  background-color: var(--blogspot);
+  box-shadow: 0 5px 15px rgba(252, 79, 8, 0.3);
+}
+
+.quick-social-icon[data-platform="threads"] {
+  background-color: var(--github-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
