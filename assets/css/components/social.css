@@ -19,10 +19,15 @@
   --behance: #1769ff;
   --leetcode: #f89f1b;
   --stackoverflow: #f48024;
-  --dailydev: #0d1117;
+  --dailydev: #6a0dad;
   --devto: #0a0a0a;
   --blogspot: #fc4f08;
   --threads: #000000;
+  --bluesky: #1da1f2;
+  --mastodon: #3088d4;
+  --hashnode-color: #2962ff;
+  --500px: #000000;
+  --unsplash: #000000;
   --primary: #8a5cf6;
 }
 
@@ -180,7 +185,7 @@
 }
 
 .quick-social-icon[data-platform="dailydev"] {
-  background-color: var(--github-color);
+  background-color: var(--dailydev);
   box-shadow: 0 5px 15px rgba(13, 17, 23, 0.3);
 }
 
@@ -190,6 +195,31 @@
 }
 
 .quick-social-icon[data-platform="threads"] {
+  background-color: var(--github-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.quick-social-icon[data-platform="bluesky"] {
+  background-color: var(--bluesky);
+  box-shadow: 0 5px 15px rgba(29, 161, 242, 0.3);
+}
+
+.quick-social-icon[data-platform="mastodon"] {
+  background-color: var(--mastodon);
+  box-shadow: 0 5px 15px rgba(48, 136, 212, 0.3);
+}
+
+.quick-social-icon[data-platform="hashnode"] {
+  background-color: var(--hashnode-color);
+  box-shadow: 0 5px 15px rgba(41, 98, 255, 0.3);
+}
+
+.quick-social-icon[data-platform="500px"] {
+  background-color: var(--github-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.quick-social-icon[data-platform="unsplash"] {
   background-color: var(--github-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }

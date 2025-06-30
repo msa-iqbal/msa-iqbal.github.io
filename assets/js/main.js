@@ -325,7 +325,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function setLogoByTheme() {
     const isDark = document.body.classList.contains("dark-mode");
-    const basePath = isSubPage ? "../public/images/" : "./public/images/";
+    // FIX: Correct path for subpages
+    const basePath = isSubPage
+      ? "../assets/images/brand/"
+      : "./assets/images/brand/";
     logo.src = isDark
       ? basePath + "white-logo.svg"
       : basePath + "black-logo.svg";
@@ -341,4 +344,29 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(setLogoByTheme, 10); // Wait for class to update
     });
   }
+});
+
+// Table of Contents
+// Highlight active ToC link as you scroll
+document.addEventListener("DOMContentLoaded", function () {
+  const tocLinks = document.querySelectorAll(".toc-fixed .toc-list a");
+  const sectionIds = Array.from(tocLinks).map((link) =>
+    link.getAttribute("href")
+  );
+  const sections = sectionIds.map((id) => document.querySelector(id));
+
+  function onScroll() {
+    let scrollPos = window.scrollY || window.pageYOffset;
+    let activeIndex = 0;
+    sections.forEach((section, i) => {
+      if (section && section.offsetTop - 80 <= scrollPos) {
+        activeIndex = i;
+      }
+    });
+    tocLinks.forEach((link) => link.classList.remove("active"));
+    if (tocLinks[activeIndex]) tocLinks[activeIndex].classList.add("active");
+  }
+
+  window.addEventListener("scroll", onScroll);
+  onScroll();
 });

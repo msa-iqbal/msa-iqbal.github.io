@@ -10,7 +10,11 @@
     />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./public/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/brand/favicon.ico"
+    />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +32,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/social.css" />
+    <link rel="stylesheet" href="./assets/css/components/social.css" />
   </head>
   <body class="dark-mode">
     <!-- Background Animation -->
@@ -43,7 +47,7 @@
         <div class="logo">
           <a href="index.html" aria-label="Home" title="Home"
             ><img
-              src="./public/images/white-logo.svg"
+              src="./assets/images/brand/white-logo.svg"
               alt="Muhammad S.A. Iqbal"
               width="90"
               height="auto"
@@ -83,7 +87,7 @@
             <div class="profile-image-container">
               <div class="profile-image">
                 <img
-                  src="./public/images/profile.jpg"
+                  src="./assets/images/brand/profile.jpg"
                   alt="Muhammad S.A. Iqbal"
                 />
               </div>
@@ -101,25 +105,26 @@
                 sharing knowledge with the world.
               </p>
               <a
-                href="https://www.msaiqbal.com"
+                href="https://tinsights.vercel.app"
                 class="website-link"
                 target="_blank"
               >
                 <i class="fas fa-globe"></i>
-                linkedin.com/in/msa-iqbal
+                tinsights.vercel.app
               </a>
             </div>
           </div>
         </section>
 
         <section>
-          <!-- Quick Social Links -->
+          <!-- ===== Quick Social Links ===== -->
           <div class="quick-social-links">
             <div class="quick-social-title">
               <span>Quick Connect</span>
               <div class="quick-social-line"></div>
             </div>
             <div class="quick-social-icons">
+              <!-- --- LinkedIn -->
               <a
                 href="https://www.linkedin.com/in/msa-iqbal"
                 class="quick-social-icon"
@@ -128,6 +133,7 @@
               >
                 <i class="fab fa-linkedin-in"></i>
               </a>
+              <!-- --- Twitter -->
               <a
                 href="https://x.com/msaiqs"
                 class="quick-social-icon"
@@ -136,6 +142,31 @@
               >
                 <i class="fab fa-twitter"></i>
               </a>
+              <!-- --- BlueSky -->
+              <a
+                href="https://bsky.app/profile/msa-iqbal.bsky.social"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="bluesky"
+              >
+                <img
+                  src="./assets/images/icons/bluesky.svg"
+                  alt="Bluesky"
+                  width="24"
+                  height="24"
+                  style="vertical-align: middle"
+                />
+              </a>
+              <!-- --- Mastodon -->
+              <a
+                href="https://mastodon.social/@msaiq"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="mastodon"
+              >
+                <i class="fab fa-mastodon"></i>
+              </a>
+              <!-- --- Facebook -->
               <a
                 href="https://www.facebook.com/sayhi.iqbal"
                 class="quick-social-icon"
@@ -144,6 +175,7 @@
               >
                 <i class="fab fa-facebook-f"></i>
               </a>
+              <!-- --- Instagram -->
               <a
                 href="https://www.instagram.com/msaiqs"
                 class="quick-social-icon"
@@ -152,30 +184,16 @@
               >
                 <i class="fab fa-instagram"></i>
               </a>
+              <!-- --- 500px -->
               <a
-                href="https://www.threads.com/@msaiqs"
+                href="https://500px.com/p/msaiq"
                 class="quick-social-icon"
                 target="_blank"
-                data-platform="threads"
+                data-platform="500px"
               >
-                <i class="fas fa-at"></i>
+                <i class="fab fa-500px"></i>
               </a>
-              <a
-                href="https://www.youtube.com/@msa-iqbal"
-                class="quick-social-icon"
-                target="_blank"
-                data-platform="youtube"
-              >
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a
-                href="https://soundcloud.com/spnkhn"
-                class="quick-social-icon"
-                target="_blank"
-                data-platform="soundcloud"
-              >
-                <i class="fab fa-soundcloud"></i>
-              </a>
+              <!-- --- Flickr -->
               <a
                 href="https://www.flickr.com/photos/spnkhn"
                 class="quick-social-icon"
@@ -184,14 +202,64 @@
               >
                 <i class="fab fa-flickr"></i>
               </a>
+              <!-- --- Threads -->
+              <a
+                href="https://www.threads.com/@msaiqs"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="threads"
+              >
+                <img
+                  src="./assets/images/icons/threads.svg"
+                  alt="Threads"
+                  width="23"
+                  height="23"
+                  style="vertical-align: middle"
+                />
+              </a>
+              <!-- --- Youtube -->
+              <a
+                href="https://www.youtube.com/@msa-iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="youtube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <!-- --- SoundCloud -->
+              <a
+                href="https://soundcloud.com/spnkhn"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="soundcloud"
+              >
+                <i class="fab fa-soundcloud"></i>
+              </a>
+              <!-- --- Unsplash -->
+              <a
+                href="https://unsplash.com/@msaiq"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="unsplash"
+              >
+                <i class="fab fa-unsplash"></i>
+              </a>
+              <!-- --- Pixabay -->
               <a
                 href="https://pixabay.com/users/msa-iqbal-50233256"
                 class="quick-social-icon"
                 target="_blank"
                 data-platform="pixabay"
               >
-                <i class="fas fa-images"></i>
+                <img
+                  src="./assets/images/icons/pixabay.svg"
+                  alt="Pixabay"
+                  width="25"
+                  height="25"
+                  style="vertical-align: middle"
+                />
               </a>
+              <!-- --- Dribbble -->
               <a
                 href="https://dribbble.com/msa-iqbal"
                 class="quick-social-icon"
@@ -200,6 +268,7 @@
               >
                 <i class="fab fa-dribbble"></i>
               </a>
+              <!-- --- Behance -->
               <a
                 href="https://www.behance.net/msa-iqbal"
                 class="quick-social-icon"
@@ -208,6 +277,7 @@
               >
                 <i class="fab fa-behance"></i>
               </a>
+              <!-- --- GitHub -->
               <a
                 href="https://github.com/msa-iqbal"
                 class="quick-social-icon"
@@ -216,14 +286,22 @@
               >
                 <i class="fab fa-github"></i>
               </a>
+              <!-- --- Leetcode -->
               <a
                 href="https://leetcode.com/u/msa-iqbal"
                 class="quick-social-icon"
                 target="_blank"
                 data-platform="leetcode"
               >
-                <i class="fas fa-code"></i>
+                <img
+                  src="./assets/images/icons/leetcode.svg"
+                  alt="Leetcode"
+                  width="25"
+                  height="25"
+                  style="vertical-align: middle"
+                />
               </a>
+              <!-- --- StackOverFlow -->
               <a
                 href="https://stackoverflow.com/users/28065117/muhammad-s-a-iqbal"
                 class="quick-social-icon"
@@ -232,6 +310,7 @@
               >
                 <i class="fab fa-stack-overflow"></i>
               </a>
+              <!-- --- Devto -->
               <a
                 href="https://dev.to/msa-iqbal"
                 class="quick-social-icon"
@@ -240,14 +319,22 @@
               >
                 <i class="fab fa-dev"></i>
               </a>
+              <!-- --- DailyDev -->
               <a
                 href="https://app.daily.dev/msa_iqbal/posts"
                 class="quick-social-icon"
                 target="_blank"
                 data-platform="dailydev"
               >
-                <i class="fas fa-newspaper"></i>
+                <img
+                  src="./assets/images/icons/dailydev.svg"
+                  alt="DailyDev"
+                  width="30"
+                  height="30"
+                  style="vertical-align: middle"
+                />
               </a>
+              <!-- --- Medium -->
               <a
                 href="https://medium.com/@msa-iqbal"
                 class="quick-social-icon"
@@ -256,6 +343,16 @@
               >
                 <i class="fab fa-medium-m"></i>
               </a>
+              <!-- --- Hashnode -->
+              <a
+                href="https://hashnode.com/@msa-iqbal"
+                class="quick-social-icon"
+                target="_blank"
+                data-platform="hashnode"
+              >
+                <i class="fab fa-hashnode"></i>
+              </a>
+              <!-- --- BlogSpot -->
               <a
                 href="https://msa-iqbal.blogspot.com"
                 class="quick-social-icon"
@@ -283,6 +380,6 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -4,6 +4,7 @@
 .about-header {
   text-align: center;
   margin-bottom: var(--space-2xl);
+  margin-top: var(--space-3xl);
 }
 
 .about-title {
@@ -427,7 +428,9 @@
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 87px;
 }
+
 
 .flickr-title::after {
   content: "";

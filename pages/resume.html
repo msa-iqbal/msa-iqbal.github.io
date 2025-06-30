@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume - Muhammad S.A. Iqbal</title>
+    <title>Resume | Muhammad S.A. Iqbal</title>
     <meta
       name="description"
       content="Professional resume of Muhammad S.A. Iqbal - Web Developer, Designer, Content Creator & Photographer"
     />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../public/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/images/brand/favicon.ico"
+    />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +32,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/about.css" />
+    <link rel="stylesheet" href="../assets/css/components/about.css" />
   </head>
   <body class="dark-mode">
     <!-- Background Animation -->
@@ -43,7 +47,7 @@
         <div class="logo">
           <a href="../index.html" aria-label="Home" title="Home"
             ><img
-              src="../public/images/white-logo.svg"
+              src="../assets//images/brand/white-logo.svg"
               alt="Muhammad S.A. Iqbal"
               width="90"
               height="auto"
@@ -71,7 +75,7 @@
         </div>
         <div class="header-actions">
           <a
-            href="https://drive.google.com/file/d/1Dlub-i0BeKnOKiV2OEdhxPmQ9BvvkjUS/view?usp=sharing"
+            href="https://drive.google.com/file/d/1VqzirCncvWZc_5hgmu_1wl3zjYm-l2K1/view?usp=sharing"
             class="download-resume"
             target="_blank"
             rel="noopener noreferrer"
@@ -80,6 +84,22 @@
           </a>
         </div>
       </header>
+
+      <!-- Table of Contents -->
+      <div class="toc-fixed">
+        <h3>Table of Contents</h3>
+        <ul class="toc-list">
+          <li><a href="#career-objective">Career Objective</a></li>
+          <li><a href="#career-summary">Career Summary</a></li>
+          <li><a href="#skills">Technical Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#language-proficiency">Language Proficiency</a></li>
+          <li><a href="#extra-activities">Extra Activities</a></li>
+        </ul>
+      </div>
 
       <!-- Main Content -->
       <main>
@@ -91,7 +111,7 @@
         </div>
 
         <!-- Career Objective Section -->
-        <div class="cus-margin2">
+        <div class="cus-margin2" id="career-objective">
           <div class="section-header">
             <div class="section-icon">
               <i class="fas fa-user-tie"></i>
@@ -109,7 +129,7 @@
         </div>
 
         <!-- Career Summary Section -->
-        <div class="resume-section">
+        <div class="resume-section" id="career-summary">
           <div class="section-header">
             <div class="section-icon">
               <i class="fas fa-user-graduate"></i>
@@ -127,7 +147,7 @@
         </div>
 
         <!-- Skills Section -->
-        <div class="resume-section">
+        <div class="resume-section" id="skills">
           <div class="section-header">
             <div class="section-icon">
               <i class="fas fa-cogs"></i>
@@ -289,7 +309,7 @@
         </div>
 
         <!-- Project Section -->
-        <div class="resume-section">
+        <div class="resume-section" id="projects">
           <div class="section-header">
             <div class="section-icon">
               <i class="fas fa-recycle"></i>
@@ -311,7 +331,7 @@
             <div class="certificate-card">
               <div class="certificate-image">
                 <img
-                  src="../public/proj-img/indoor-plant.png?height=180&width=320"
+                  src="../assets/images/proj-img/indoor-plant.png?height=180&width=320"
                   alt="Indoor Tree Plant"
                 />
               </div>
@@ -339,7 +359,7 @@
             <div class="certificate-card">
               <div class="certificate-image">
                 <img
-                  src="../public/proj-img/rest.jpg?height=180&width=320"
+                  src="../assets/images/proj-img/rest.jpg?height=180&width=320"
                   alt="RESTful API with Authentication"
                 />
               </div>
@@ -367,7 +387,7 @@
             <div class="certificate-card">
               <div class="certificate-image">
                 <img
-                  src="../public/proj-img/blog-app.png?height=180&width=320"
+                  src="../assets/images/proj-img/blog-app.png?height=180&width=320"
                   alt="Blog App"
                 />
               </div>
@@ -395,7 +415,7 @@
         </div>
 
         <!-- Work Experience Section -->
-        <div class="cus-margin">
+        <div class="cus-margin" id="work-experience">
           <div class="section-header">
             <div class="section-icon">
               <i class="fas fa-briefcase"></i>
@@ -603,7 +623,7 @@
         </div>
 
         <!-- Education Section -->
-        <div class="resume-section">
+        <div class="resume-section" id="education">
           <div class="section-header">
             <div class="section-icon">
               <i class="fas fa-graduation-cap"></i>
@@ -678,19 +698,51 @@
         </div>
 
         <!-- Certificates Section -->
-        <div class="certificates-section">
+        <div class="certificates-section" id="certificates">
           <div class="section-header">
             <div class="section-icon">
               <i class="fas fa-certificate"></i>
             </div>
             <h2>Certificates</h2>
           </div>
-
           <div class="certificates-grid">
+            <!-- Certificate 1 -->
             <div class="certificate-card">
               <div class="certificate-image">
                 <img
-                  src="../public/document-img/seo.png?height=180&width=320"
+                  src="../assets/images/document-img/mern-stack.png?height=180&width=320"
+                  alt="MERN Stack Web Development"
+                />
+              </div>
+              <div class="certificate-info">
+                <h3>MERN Stack Web Development</h3>
+                <div class="issuer">
+                  <a
+                    href="https://interactivecares.com"
+                    target="_blank"
+                    aria-label="https://interactivecares.com"
+                    title="Interactive Cares"
+                    class="edu-link"
+                    ><h4>Interactive Cares</h4></a
+                  >
+                </div>
+                <div class="date">Completed in 2025 (6-month duration)</div>
+                <a
+                  href="https://drive.google.com/file/d/1zwM5m-tzKPsudKFo2jJb2qFsN_3fmPTK/view?usp=sharing"
+                  class="certificate-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="MERN Stack Web Development"
+                >
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </a>
+              </div>
+            </div>
+            <!-- Certificate 2 -->
+            <div class="certificate-card">
+              <div class="certificate-image">
+                <img
+                  src="../assets/images/document-img/seo-digital-marketing.png?height=180&width=320"
                   alt="Search Engine Optimization"
                 />
               </div>
@@ -708,7 +760,7 @@
                 </div>
                 <div class="date">Completed in 2016 (3-month duration)</div>
                 <a
-                  href="https://drive.google.com/file/d/1Iesd_BG18xsbCCcZEPReMshKgbiTLBXm/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1J5XFicS-WHcUTDwdAk0WtSzeW_2_hM1H/view?usp=sharing"
                   class="certificate-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -718,11 +770,11 @@
                 </a>
               </div>
             </div>
-
+            <!-- Certificate 3 -->
             <div class="certificate-card">
               <div class="certificate-image">
                 <img
-                  src="../public/document-img/office.png?height=180&width=320"
+                  src="../assets/images/document-img/office-application.png?height=180&width=320"
                   alt="Computer Office Application"
                 />
               </div>
@@ -740,7 +792,7 @@
                 </div>
                 <div class="date">Completed in 2011 (3-month duration)</div>
                 <a
-                  href="https://drive.google.com/file/d/1kgUT6dMULm-9wnickD6HxuyGpIFS7LOA/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1n0xvVjqm5a1HeSLLTdBBGhhuI-Lq1bi1/view?usp=sharing"
                   class="certificate-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -754,7 +806,7 @@
         </div>
 
         <!-- Language Proficiency Section -->
-        <div class="resume-section">
+        <div class="resume-section" id="language-proficiency">
           <div class="section-header">
             <div class="section-icon">
               <i class="fas fa-cogs"></i>
@@ -790,7 +842,7 @@
         </div>
 
         <!-- Extra Activities Section -->
-        <div>
+        <div class="resume-section" id="extra-activities">
           <div class="section-header">
             <div class="section-icon">
               <i class="fas fa-person-biking"></i>
@@ -926,7 +978,7 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/about.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/utils/about.js"></script>
   </body>
 </html>

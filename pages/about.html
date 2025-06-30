@@ -10,7 +10,11 @@
     />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../public/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/images/brand/favicon.ico"
+    />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +32,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/about.css" />
+    <link rel="stylesheet" href="../assets/css/components/about.css" />
   </head>
 
   <body class="dark-mode">
@@ -44,7 +48,7 @@
         <div class="logo">
           <a href="../index.html" aria-label="Home" title="Home"
             ><img
-              src="../public/images/white-logo.svg"
+              src="../assets//images/brand/white-logo.svg"
               alt="Muhammad S.A. Iqbal"
               width="90"
               height="auto"
@@ -72,9 +76,20 @@
         </div>
       </header>
 
+      <!-- Table of Contents -->
+      <div class="toc-fixed">
+        <h3>Table of Contents</h3>
+        <ul class="toc-list">
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#photography">Photography</a></li>
+          <li><a href="#toolkit">Toolkit</a></li>
+        </ul>
+      </div>
+
       <!-- Main Content -->
       <main>
-        <section>
+        <section id="about">
           <div class="about-header summary-content">
             <h1 class="about-title">About Me</h1>
             <div class="about-description">
@@ -244,7 +259,7 @@
         </section>
 
         <!-- About Me Cards -->
-        <section class="about-section about-cards-section">
+        <section class="about-section about-cards-section" id="about-cards">
           <div class="about-cards">
             <div class="about-card" data-aos="zoom-in">
               <div class="card-icon">
@@ -382,9 +397,14 @@
         </section>
 
         <!-- Flickr Section -->
-        <section class="about-section flickr-section" data-aos="fade-up">
+        <section
+          class="about-section flickr-section"
+          data-aos="fade-up"
+          id="photography"
+        >
           <h2 class="flickr-title">Captured it on Flickr</h2>
           <div class="flickr-gallery">
+            <!-- Image 1 -->
             <div class="flickr-image" data-aos="fade-up">
               <a
                 href="https://flic.kr/p/SWdMDL"
@@ -392,11 +412,12 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-5.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-5.jpg?height=200&width=300"
                   alt="Bird"
                 />
               </a>
             </div>
+            <!-- Image 2 -->
             <div class="flickr-image" data-aos="fade-up" data-aos-delay="300">
               <a
                 href="https://flic.kr/p/2eZKHLm"
@@ -404,11 +425,12 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-4.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-4.jpg?height=200&width=300"
                   alt="Fhanus - Bangladeshi Traditional Lantern"
                 />
               </a>
             </div>
+            <!-- Image 3 -->
             <div class="flickr-image" data-aos="fade-up" data-aos-delay="100">
               <a
                 href="https://flic.kr/p/2f5nz44"
@@ -416,11 +438,12 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-2.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-2.jpg?height=200&width=300"
                   alt="Grasshopper"
                 />
               </a>
             </div>
+            <!-- Image 4 -->
             <div class="flickr-image" data-aos="fade-up" data-aos-delay="200">
               <a
                 href="https://flic.kr/p/SWhr5w"
@@ -428,11 +451,12 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-1.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-1.jpg?height=200&width=300"
                   alt="Saint Martin Island"
                 />
               </a>
             </div>
+            <!-- Image 5 -->
             <div class="flickr-image" data-aos="fade-up" data-aos-delay="200">
               <a
                 href="https://flic.kr/p/2dFzK1z"
@@ -440,11 +464,12 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-6.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-6.jpg?height=200&width=300"
                   alt="Twilight"
                 />
               </a>
             </div>
+            <!-- Image 6 -->
             <div class="flickr-image" data-aos="fade-up" data-aos-delay="100">
               <a
                 href="https://flic.kr/p/2eZKhCL"
@@ -452,11 +477,12 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-8.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-8.jpg?height=200&width=300"
                   alt="Flower"
                 />
               </a>
             </div>
+            <!-- Image 7 -->
             <div class="flickr-image" data-aos="fade-up" data-aos-delay="300">
               <a
                 href="https://flic.kr/p/SWgUiG"
@@ -464,11 +490,12 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-9.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-9.jpg?height=200&width=300"
                   alt="nature"
                 />
               </a>
             </div>
+            <!-- Image 8 -->
             <div class="flickr-image" data-aos="fade-up" data-aos-delay="300">
               <a
                 href="https://flic.kr/p/2dFzcT4"
@@ -476,11 +503,12 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-10.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-10.jpg?height=200&width=300"
                   alt="Twilight"
                 />
               </a>
             </div>
+            <!-- Image 9 -->
             <div class="flickr-image" data-aos="fade-up" data-aos-delay="100">
               <a
                 href="https://flic.kr/p/2dFzdE4"
@@ -488,11 +516,12 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-3.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-3.jpg?height=200&width=300"
                   alt="Nature"
                 />
               </a>
             </div>
+            <!-- Image 10 -->
             <div class="flickr-image" data-aos="fade-up" data-aos-delay="200">
               <a
                 href="https://flic.kr/p/SWhrrd"
@@ -500,11 +529,12 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-12.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-12.jpg?height=200&width=300"
                   alt="Saint Martin Island"
                 />
               </a>
             </div>
+            <!-- Image 11 -->
             <div class="flickr-image" data-aos="fade-up" data-aos-delay="200">
               <a
                 href="https://flic.kr/p/SWdMdA"
@@ -512,11 +542,12 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-7.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-7.jpg?height=200&width=300"
                   alt="Doel Bird"
                 />
               </a>
             </div>
+            <!-- Image 12 -->
             <div class="flickr-image" data-aos="fade-up" data-aos-delay="100">
               <a
                 href="https://flic.kr/p/2dYsBAW"
@@ -524,7 +555,7 @@
                 aria-label="Flickr"
               >
                 <img
-                  src="../public/flickr-img/img-11.jpg?height=200&width=300"
+                  src="../assets/images/flickr-img/img-11.jpg?height=200&width=300"
                   alt="Flower"
                 />
               </a>
@@ -533,7 +564,11 @@
         </section>
 
         <!-- Daily Toolkit Section -->
-        <section class="about-section toolkit-section" data-aos="fade-up">
+        <section
+          class="about-section toolkit-section"
+          data-aos="fade-up"
+          id="toolkit"
+        >
           <h2 class="flickr-title">⚙ My Daily Toolkit</h2>
           <div class="toolkit-grid">
             <div class="toolkit-item" data-aos="fade-up">
@@ -639,18 +674,26 @@
         </section>
 
         <!-- Call to Action Section -->
-        <section class="cta-section">
+        <section>
           <div class="cta-buttons">
-            <a href="../pages/portfolio.html" class="cta-button portfolio">
+            <a
+              href="https://tinsights.vercel.app"
+              target="_blank"
+              class="cta-button portfolio"
+            >
               <div class="button-icon">
-                <i class="fas fa-briefcase"></i>
+                <i class="fas fa-users"></i>
               </div>
               <div class="button-text">
-                <span>View Portfolio</span>
-                <small>Check out my work</small>
+                <span>My Community</span>
+                <small>Join my community</small>
               </div>
             </a>
-            <a href="../pages/contact.html" class="cta-button contact">
+            <a
+              href="../pages/contact.html"
+              target="_self"
+              class="cta-button contact"
+            >
               <div class="button-icon">
                 <i class="fas fa-envelope"></i>
               </div>
@@ -659,13 +702,17 @@
                 <small>Let's work together</small>
               </div>
             </a>
-            <a href="../pages/projects.html" class="cta-button resume">
+            <a
+              href="../pages/resume.html"
+              target="_blank"
+              class="cta-button resume"
+            >
               <div class="button-icon">
                 <i class="fas fa-file-alt"></i>
               </div>
               <div class="button-text">
                 <span>Resume</span>
-                <small>Get my resume</small>
+                <small>View my resume</small>
               </div>
             </a>
           </div>
@@ -686,7 +733,7 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/about.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/utils/about.js"></script>
   </body>
 </html>
