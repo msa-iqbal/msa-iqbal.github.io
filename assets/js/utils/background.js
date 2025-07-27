@@ -206,9 +206,10 @@ function initParticleAnimation() {
     }
   }
 
-  /* // Get particle color based on theme
+  // Get particle color based on theme
   function getParticleColor() {
-    const darkColors = [
+    const darkColors = 0;
+    /* [
       "#7c3aed",
       "#a78bfa",
       "#c4b5fd",
@@ -229,11 +230,11 @@ function initParticleAnimation() {
       "#10b981",
       "#ec4899",
       "#f59e0b",
-    ];
+    ]; */
 
     const colors = isDarkMode ? darkColors : lightColors;
     return colors[Math.floor(Math.random() * colors.length)];
-  } */
+  }
 
   // Track mouse position
   document.addEventListener("mousemove", (e) => {

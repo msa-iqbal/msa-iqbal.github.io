@@ -393,7 +393,7 @@ footer {
   width: 180px;
   height: 180px;
   border-radius: var(--radius-full);
-  animation: float 6s ease-in-out infinite;
+  /* animation: float 6s ease-in-out infinite; */
 }
 
 .profile-image {
