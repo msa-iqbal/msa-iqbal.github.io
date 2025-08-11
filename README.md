@@ -1,10 +1,8 @@
-# Muhammad S.A. Iqbal
-
 ### Fueled by Curiosity, Powered by Code
 
 Passionate about creating beautiful digital experiences and sharing knowledge with the world.
 
-## Contact
+### Contact
 
 Feel free to reach out if you have any questions or suggestions:
 
@@ -12,6 +10,6 @@ Feel free to reach out if you have any questions or suggestions:
 - Website: [Muhammad S.A. Iqbal](https://mqs.vercel.app)
 - LinkedIn: [Muhammad S.A. Iqbal](https://www.linkedin.com/in/msa-iqbal)
 
----
+#
 
 Made with ❤️ by Muhammad S.A. Iqbal
