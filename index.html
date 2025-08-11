@@ -1,270 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDFHub - Document Sharing Platform</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- PDF.js for preview -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-content">
-            <div class="logo">
-                <i class="fas fa-file-pdf"></i>
-                <span>PDFHub</span>
-            </div>
-            
-            <div class="search-container">
-                <div class="search-box">
-                    <i class="fas fa-search"></i>
-                    <input type="text" id="searchInput" placeholder="Search documents...">
-                </div>
-            </div>
-            
-            <div class="header-actions">
-                <button class="btn-icon" id="uploadBtn" title="Upload PDF">
-                    <i class="fas fa-plus"></i>
-                </button>
-                <button class="btn-icon" id="themeToggle" title="Toggle theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad S.A. Iqbal | Digital Creator</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar-section">
-                <h3>Categories</h3>
-                <ul class="category-list" id="categoryList">
-                    <!-- Categories will be populated by JavaScript -->
-                </ul>
-            </div>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.ico" />
 
-            <div class="sidebar-section">
-                <h3>Quick Actions</h3>
-                <button class="sidebar-btn" id="uploadSidebarBtn">
-                    <i class="fas fa-upload"></i>
-                    Upload Document
-                </button>
-                <button class="sidebar-btn" id="recentBtn">
-                    <i class="fas fa-clock"></i>
-                    Recent Downloads
-                </button>
-            </div>
-        </aside>
+    <link href="./assets/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="scroll-indicator"></div>
+    <canvas id="particles-canvas"></canvas>
 
-        <!-- Content Area -->
-        <div class="content-area">
-            <!-- Toolbar -->
-            <div class="toolbar">
-                <div class="toolbar-left">
-                    <span class="breadcrumb" id="breadcrumb">All Documents</span>
-                    <span class="document-count" id="documentCount">0 documents</span>
-                </div>
-                
-                <div class="toolbar-right">
-                    <div class="view-options">
-                        <button class="view-btn active" data-view="list" title="List view">
-                            <i class="fas fa-list"></i>
-                        </button>
-                        <button class="view-btn" data-view="grid" title="Grid view">
-                            <i class="fas fa-th"></i>
-                        </button>
-                    </div>
-                    
-                    <div class="sort-options">
-                        <select id="sortSelect">
-                            <option value="name">Sort by Name</option>
-                            <option value="date">Sort by Date</option>
-                            <option value="size">Sort by Size</option>
-                            <option value="downloads">Sort by Downloads</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+    <section id="home" class="hero">
+      <div class="floating-element"><i class="fas fa-code"></i></div>
+      <div class="floating-element"><i class="fas fa-laptop-code"></i></div>
+      <div class="floating-element"><i class="fas fa-mobile-alt"></i></div>
 
-            <!-- Document List -->
-            <div class="document-container">
-                <div class="document-list" id="documentList">
-                    <!-- Documents will be populated here -->
-                </div>
-                
-                <div class="empty-state" id="emptyState" style="display: none;">
-                    <i class="fas fa-folder-open"></i>
-                    <h3>No documents found</h3>
-                    <p>Try adjusting your search or browse different categories</p>
-                </div>
-            </div>
+      <div class="hero-content">
+        <h1>Muhammad S.A. Iqbal</h1>
+        <p class="subtitle">
+          Fueled by Curiosity, Powered by
+          <span class="typing-text" id="typing-text">Developer</span>
+        </p>
+        <div class="hero-buttons">
+          <a
+            href="https://mqs.vercel.app"
+            target="_blank"
+            class="btn btn-primary"
+            >View on Web</a
+          >
+          <a
+            href="https://mqs.vercel.app/pages/contact.html"
+            target="_blank"
+            class="btn btn-secondary"
+            >Get In Touch</a
+          >
         </div>
-    </main>
+      </div>
+    </section>
 
-    <!-- Upload Modal -->
-    <div class="modal" id="uploadModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Upload Document</h2>
-                <button class="modal-close" id="modalClose">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            
-            <div class="modal-body">
-                <div class="upload-area" id="uploadArea">
-                    <i class="fas fa-cloud-upload-alt"></i>
-                    <h3>Drop PDF files here</h3>
-                    <p>or <span class="upload-link">click to browse</span></p>
-                    <small>Maximum file size: 50MB</small>
-                    <input type="file" id="fileInput" accept=".pdf" multiple hidden>
-                </div>
-                
-                <form class="upload-form" id="uploadForm">
-                    <div class="form-group">
-                        <label for="docTitle">Document Title *</label>
-                        <input type="text" id="docTitle" required>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="docAuthor">Author</label>
-                            <input type="text" id="docAuthor">
-                        </div>
-                        <div class="form-group">
-                            <label for="docCategory">Category *</label>
-                            <select id="docCategory" required>
-                                <option value="">Select category</option>
-                                <option value="academic">Academic</option>
-                                <option value="business">Business</option>
-                                <option value="technical">Technical</option>
-                                <option value="research">Research</option>
-                                <option value="legal">Legal</option>
-                                <option value="manual">Manual</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="docDescription">Description</label>
-                        <textarea id="docDescription" rows="3" placeholder="Brief description..."></textarea>
-                    </div>
-                    
-                    <div class="form-actions">
-                        <button type="button" class="btn btn-secondary" id="cancelUpload">Cancel</button>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-upload"></i>
-                            Upload Document
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Preview Modal -->
-    <div class="modal" id="previewModal">
-        <div class="modal-content preview-modal">
-            <div class="modal-header">
-                <h2 id="previewTitle">Document Preview</h2>
-                <div class="preview-actions">
-                    <button class="btn-icon" id="downloadFromPreview" title="Download">
-                        <i class="fas fa-download"></i>
-                    </button>
-                    <button class="btn-icon" id="shareFromPreview" title="Share">
-                        <i class="fas fa-share"></i>
-                    </button>
-                    <button class="modal-close" id="previewClose">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-            </div>
-            
-            <div class="modal-body preview-body">
-                <div class="preview-container">
-                    <canvas id="pdfCanvas"></canvas>
-                    <div class="preview-controls">
-                        <button class="btn-icon" id="prevPage" title="Previous page">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <span id="pageInfo">Page 1 of 1</span>
-                        <button class="btn-icon" id="nextPage" title="Next page">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="preview-info" id="previewInfo">
-                    <!-- Document info will be populated here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Delete Confirmation Modal -->
-    <div class="modal" id="deleteModal">
-        <div class="modal-content delete-modal">
-            <div class="modal-header">
-                <h2>Delete Document</h2>
-                <button class="modal-close" id="deleteModalClose">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            
-            <div class="modal-body">
-                <div class="delete-warning">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <h3>Are you sure?</h3>
-                    <p>This action cannot be undone. The document will be permanently deleted.</p>
-                    <div class="delete-document-info" id="deleteDocumentInfo">
-                        <!-- Document info will be populated here -->
-                    </div>
-                </div>
-                
-                <div class="form-actions">
-                    <button type="button" class="btn btn-secondary" id="cancelDelete">Cancel</button>
-                    <button type="button" class="btn btn-danger" id="confirmDelete">
-                        <i class="fas fa-trash"></i>
-                        Delete Document
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Context Menu -->
-    <div class="context-menu" id="contextMenu">
-        <div class="context-item" data-action="download">
-            <i class="fas fa-download"></i>
-            <span>Download</span>
-        </div>
-        <div class="context-item" data-action="preview">
-            <i class="fas fa-eye"></i>
-            <span>Preview</span>
-        </div>
-        <div class="context-item" data-action="share">
-            <i class="fas fa-share"></i>
-            <span>Share Link</span>
-        </div>
-        <div class="context-item" data-action="info">
-            <i class="fas fa-info-circle"></i>
-            <span>Properties</span>
-        </div>
-        <div class="context-divider"></div>
-        <div class="context-item danger" data-action="delete">
-            <i class="fas fa-trash"></i>
-            <span>Delete</span>
-        </div>
-    </div>
-
-    <!-- Notification Container -->
-    <div class="notification-container" id="notificationContainer"></div>
-
-    <script src="script.js"></script>
-</body>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
