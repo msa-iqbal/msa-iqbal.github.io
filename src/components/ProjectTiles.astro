@@ -1,0 +1,49 @@
+---
+import { readAll } from "../lib/markdoc/read";
+import { project } from "../lib/markdoc/frontmatter.schema";
+
+const projects = await readAll({
+  directory: "projects",
+  frontmatterSchema: project,
+});
+
+const sortedProjects = projects
+  .filter((p) => p.frontmatter.draft !== true)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.date).valueOf() -
+      new Date(a.frontmatter.date).valueOf()
+  );
+---
+
+<section class="mb-8">
+  <div class="mb-4">
+    <h2 class="font-extrabold text-4xl md:text-6xl tracking-tight pt-4 pb-2 overflow-hidden"> Projects</h2>
+    <section slot="main">
+        {
+          sortedProjects.map((project) => {
+            return (
+              <div class="grid grid-rows-[1fr] md:grid-rows-[1fr_auto] mb-3 md:gap-2 items-start pb-4">
+                <div class="font-bold text-2xl md:text-2xl tracking-tight pt-4 pb-2 overflow-hidden"><a
+                    href={project.frontmatter.url}
+                    target="_blank"
+                    class="unset hover:text-text-link"
+                  >{project.frontmatter.title}</a></div>
+                <div class="thumb">
+                  <a
+                    href={project.frontmatter.url}
+                    target="_blank"
+                    class="unset hover:text-text-link"
+                  >
+                    <img src={project.frontmatter.banner} />
+                  </a>
+                </div>
+                <div class="italic">{project.frontmatter.description}</div>
+              </div>
+            );
+          })
+        }
+    </section>
+  </div>
+</section>
+    
