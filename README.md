@@ -1,16 +1,15 @@
-# yongzhihuang.github.io
+### Fueled by Curiosity, Powered by Code
 
-My personal blog
+Passionate about creating beautiful digital experiences and sharing knowledge with the world.
 
-## Installation
+### Contact
 
-`npm install`
+Feel free to reach out if you have any questions or suggestions:
 
-## Running
+- Email: <sayhi.iqbal@gmail.com>
+- Website: [Muhammad S.A. Iqbal](https://mqs.vercel.app)
+- LinkedIn: [Muhammad S.A. Iqbal](https://www.linkedin.com/in/msa-iqbal)
 
-`npm run dev` and visit http://localhost:3000
+#
 
-## Updating the blog
-
-- The content of the blog is located in /content, to make a new blog entry, make a new MD file in /content/blog
-- This project is hooked up with GH's CI to autopublish the blog at yongzhihuang.github.io when you push to the repo.
+Made with ❤️ by Muhammad S.A. Iqbal

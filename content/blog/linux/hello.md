@@ -1,5 +1,0 @@
-# Hello Bangladesh
-
-```bash
-mkdir
-```
